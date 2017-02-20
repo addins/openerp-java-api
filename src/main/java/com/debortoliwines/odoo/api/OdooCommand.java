@@ -201,7 +201,7 @@ public class OdooCommand {
     public Object createObject(String objectName, Map<String, Object> values) throws XmlRpcException {
         Object readResult ;
         if (this.session.getServerVersion().getMajor() >= 10 ) {
-            readResult = (Object) session.executeCommand(objectName, "create", new Object[]{values});
+            readResult = (Object) session.executeCommand(objectName, "create", new Object[]{values, session.getContext()});
         } else {
             readResult = (Object) session.executeCommand(objectName, "create", new Object[]{values, session.getContext()});
         }
