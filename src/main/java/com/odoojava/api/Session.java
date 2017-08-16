@@ -16,15 +16,15 @@
  *   limitations under the License. 
  *
  */
-package com.debortoliwines.odoo.api;
+package com.odoojava.api;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.apache.xmlrpc.XmlRpcException;
 
-import com.debortoliwines.odoo.api.OdooXmlRpcProxy.RPCProtocol;
-import com.debortoliwines.odoo.api.OdooXmlRpcProxy.RPCServices;
+import com.odoojava.api.OdooXmlRpcProxy.RPCProtocol;
+import com.odoojava.api.OdooXmlRpcProxy.RPCServices;
 import java.util.Arrays;
 
 /**
