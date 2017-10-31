@@ -775,6 +775,7 @@ public class ObjectAdapter {
                 break;
             case MANY2ONE:
             case ONE2MANY:
+            case SELECTION:
             case INTEGER:
                 result = formatIntegerForWrite(value);
                 break;
